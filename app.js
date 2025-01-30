@@ -14,8 +14,8 @@ function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
     //comando abaixo habilita a leitura do texto
-    // responsiveVoice.speak(texto,'Brazilian Portuguese Female',{rate:1.1});
-
+     responsiveVoice.speak(texto,'Brazilian Portuguese Female',{rate:1.1});
+/*
     if ('speechSynthesis' in window) {
         let utterance = new SpeechSynthesisUtterance(texto);
         utterance.lang = 'pt-BR';
@@ -24,7 +24,7 @@ function exibirTextoNaTela(tag, texto) {
     } else {
         console.log("Web Speech API não suportada neste navegador.");
     }
-
+*/
 }
 
 function gerarNumeroAleatorio() {
